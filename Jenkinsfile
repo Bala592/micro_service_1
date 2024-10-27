@@ -1,7 +1,9 @@
 @Library('shared-library') _
 pipeline {
     agent any
-
+    tools{
+        maven 'maven3'
+    }
     stages {
         stage('Git clone') {
             steps {
