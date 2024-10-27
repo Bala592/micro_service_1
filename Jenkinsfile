@@ -9,7 +9,9 @@ pipeline {
             }
         }
         stage('Build the code') {
+            steps {
             buildCode()
+            }
         }
     }
 }
